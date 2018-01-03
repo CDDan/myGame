@@ -1,0 +1,32 @@
+<!--pages/details/details.wxml-->
+<view class='body'>
+  <view class='content'>
+    <image src='../../images/conter3.jpg'></image>
+  </view>
+  <view>
+    <text class='number'>第{{number2+1}}题</text>
+  </view>
+  <view class='mimian'>
+    <text>{{urlBox[number2].title}}</text>
+  </view>
+  <view>
+    <input placeholder='请输入答案' class='answer' bindinput="answer2" value='{{answer}}'></input>
+  </view>
+  <view class='btn'>
+    <button class='tijiao' bindtap='submit' name='tijiao'>提交</button>
+    <button class='tiaoguo' bindtap='skip'>跳过</button>
+  </view>
+  <view>
+    <text class="{{isShows?'see':'sees'}}" bindtap='biaoda'>点击查看谜底</text>
+    <text class="{{isShow?'a':'b'}}">{{text}}</text>
+  </view>
+  <view class="{{isShow1?'gongxi':'gongxis'}}"  >
+   <text>恭喜你答对了</text>
+  </view>
+ <view class="{{isShow2?'err':'errs'}}">
+   <text>答错了，再接再厉</text>
+  </view>
+  <view class="{{isShow3?'end':'end2'}}">
+   <text>太棒了，谜语已经猜完了</text>
+  </view>
+</view>

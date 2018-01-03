@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/guess/guess",
+    "pages/details/details",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "猜一猜",
+    "navigationBarTextStyle": "black"
+  }
+
+}

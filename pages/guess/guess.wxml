@@ -1,0 +1,20 @@
+<!--pages/guess/guess.wxml-->
+<view class='body'>
+  <!-- <view class='search'>
+    <input type='text' placeholder='搜索'  bindinput='search'/>
+    <button></button>
+  </view> -->
+  <view>
+    <text class='type'>谜语类型</text>
+  </view>
+
+  <view class='funny'>
+    <view wx:for="{{list}}" data-id='{{item.typeId}}' catchtap='dianji'>
+       <image src="{{item.img}}"  mode='aspectFill'></image> 
+        <text></text>
+      <text>{{item.typeName}}</text>
+    </view>
+   
+  </view>
+
+</view>
